@@ -1,0 +1,25 @@
+<style>
+  .far{cursor: pointer;}
+</style>
+<table class="table">
+  <thead class="thead-light">
+      <tr>
+          <th>Brand</th>
+          <th>Colour</th>
+          <th>Client</th>
+          <th>Booking Date</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let v of vehicles">
+        <td>{{v.brand}}</td>
+        <td>{{v.colour}}</td>
+        <td>{{v.bookedBy}}</td>
+        <td>{{v.bookingDate | date}}</td>
+        <td>
+            <i class="far fa-trash-alt fa-lg text-danger" (click)="onVehicleDelete.emit(v.id)"></i>
+        </td>
+    </tr>
+  </tbody>
+</table>

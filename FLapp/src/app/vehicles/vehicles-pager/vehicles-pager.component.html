@@ -1,0 +1,10 @@
+<style>
+  .pager{background: #e9ecef; text-align: center;  padding: 5px;margin-bottom: 20px;}
+  .pager > div{display: inline-block; margin: 0 10px; cursor: pointer;font-size: 13px;}
+  .pager > div:hover{cursor: pointer;}
+  .pager > .selected {text-decoration: underline;}
+</style>
+
+<div class="pager" *ngIf="service.total > 10">
+  <div *ngFor="let x of count(), let i = index" [ngClass]="{'selected' : service.page == i}" (click)="onPagerClick.emit(i)">{{i+1}}</div>
+</div>

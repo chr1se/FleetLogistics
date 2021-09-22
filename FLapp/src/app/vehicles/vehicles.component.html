@@ -1,0 +1,13 @@
+<style>
+  .row{margin:0 auto}
+  .far{cursor: pointer;}
+</style>
+<div class="row container justify-content-center">
+  <div class="col-md-4">
+    <app-vehicles-filter (onFilterChange)="filterChange($event)"></app-vehicles-filter>
+  </div>
+  <div class="col-md-7">
+    <app-vehicles-list [vehicles]="service.vehicles" (onVehicleDelete)="onDelete($event)"></app-vehicles-list>
+    <app-vehicles-pager (onPagerClick)="pagerClick($event)"></app-vehicles-pager>
+  </div>
+</div>
