@@ -33,7 +33,7 @@ The whole directory including the `FLapi.sln` is included. Clicking on it will s
 
 Go to MS-SQL Server Management Studio to find out your MS-SQL Server name.
 
-Change the `Server` name in the connection string of the `appsettings.json` to your ms-sql server name
+Change the `Server=<mssql-servername>` name in the connection string of the `appsettings.json` to your ms-sql server name
 
 ```
   "ConnectionStrings": {
