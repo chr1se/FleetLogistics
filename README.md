@@ -5,9 +5,8 @@ FLapp - The Angular src folder directory
 
 [VehicleDB].[dbo].[Vehicles].sql - SQL mockdata
 
+## 1. Frontend (FLapp): Angular
 
-
-## 1. Frontend (FLapp): Angular 
 Ensure you have node.js then run the following commands in your terminal:
 
 ```
@@ -27,8 +26,7 @@ Browser will open to ```http://localhost:4200/```
 
 The link `http://localhost:4200/vehicles` is the important but will not work till you have the Backend setup.
 
-
-
+  
 ## 2. Backend (FLapi): ASP
 The whole directory including the `FLapi.sln` is included. Clicking on it will startup Visual Studio
 
